@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jacqueline's Personal Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">	
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"><img src="images/logo.jpg"></a>
+			<div class="nav-links">
+				<i class="fas fa-times" onclick="hideMenu()"></i>
+			<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="">ABOUT</a></li>
+					<li><a href="">SKILLS</a></li>
+					<li><a href="">EDUCATION</a></li>
+					<li><a href="">PORTFOLIO</a></li>
+				</ul>
+			</div>
+			<i class="fas fa-bars" onclick="showMenu()"></i>
+		</nav>
+
+<div class="text-box">
+	<h1>Hello there!</h1>
+	<p>Welcome to My Personal Portfolio, my name is Jacqueline S. Norcio and I am a BSIT student. <br>To know more about me, feel free to explore my website.</p>
+</div>	
+
+	</section>
+
+<!--About-->
+<section class="about">
+	<h1>About Me</h1>
+	<p>Get to know more about my personal information</p>
+
+	<div class="row">
+		<div class="about-col">
+			<h3>Name</h3>
+			<p>Jacqueline S. Norcio</p>
+		</div>
+		<div class="about-col">
+			<h3>Age</h3>
+			<p>19 years old</p>
+		</div>
+		<div class="about-col">
+			<h3>Birthday</h3>
+			<p>October 15, 2001</p>
+		</div>
+		<div class="about-col">
+			<h3>Current Address</h3>
+			<p>Palangue Central, Naic, Cavite</p>
+		</div>
+		<div class="about-col">
+			<h3>E-mail</h3>
+			<p>jacqueline.norcio@cvsu.edu.ph</p>
+		</div>
+	</div>
+</section>
+
+<!--Skills-->
+<section class="skills">	
+	<!---max-width dito-->
+	<h1>Skills</h1> <!--title-->
+	<p>My creative skills and experiences</p>
+
+	<div class="skills-content">
+		<div class="column-left">
+			<div class="text">These are the skills that I acquire as a BSIT student</div>
+			<h5>These are the skills that I acquire as a BSIT student</h5>
+		</div>
+	</div>
+	<div class="column right">
+		<div  class="bars">
+			<div class="skills-col"> <!--info-->
+				<span>HTML</span>
+				<span>30%</span>
+			</div>
+		</div>
+		<div  class="bars">
+			<div class="skills-col">
+				<span>CSS</span>
+				<span>30%</span>
+			</div>
+		</div>
+		<div  class="bars">
+			<div class="skills-col">
+				<span>JAVA</span>
+				<span>30%</span>
+			</div>
+		</div>
+		<div  class="bars">
+			<div class="skills-col">
+				<span>PYTHON</span>
+				<span>30%</span>
+			</div>
+		</div>
+		<div  class="bars">
+			<div class="skills-col">
+				<span>C++</span>
+				<span>30%</span>
+			</div>
+		</div>
+		<div  class="bars">
+			<div class="skills-col">
+				<span>PHP</span>
+				<span>15%</span>
+			</div>
+		</div>
+		<div  class="bars">
+			<div class="skills-col">
+				<span>MYSQL</span>
+				<span>20%</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+				
+		
+
+<!---JavaScript-->
+<script>
+	var navLinks = document.getElementId("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right= "-200px";
+	}
+
+</script>
+
+</body>
+</html>
