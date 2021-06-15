@@ -6,28 +6,35 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">	
+
+	<script src="https://kit.fontawesome.com/fa968a115a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+	<div class="scroll-up-btn">
+		<i
+	</div>
 	<section class="header">
 		<nav>
 			<a href="index.html"><img src="images/logo.jpg"></a>
-			<div class="nav-links">
+			<div class="nav-links" id="navLinks">
 				<i class="fas fa-times" onclick="hideMenu()"></i>
 			<ul>
 					<li><a href="index.html">HOME</a></li>
-					<li><a href="">ABOUT</a></li>
-					<li><a href="">SKILLS</a></li>
-					<li><a href="">EDUCATION</a></li>
-					<li><a href="">PROJECTS</a></li>
+					<li><a href=".about">ABOUT</a></li>
+					<li><a href="#skills">SKILLS</a></li>
+					<li><a href="#edu">EDUCATION</a></li>
+					<li><a href="#project">PROJECTS</a></li>
 				</ul>
 			</div>
 			<i class="fas fa-bars" onclick="showMenu()"></i>
+			
 		</nav>
 
 <div class="text-box">
 	<h1>Hello there!</h1>
-	<p>Welcome to My Personal Portfolio, my name is Jacqueline S. Norcio and I am a BSIT student. <br>To know more about me, feel free to explore my website.</p>
+	<p>Welcome to My Personal Portfolio, my name is Jacqueline S. Norcio and 
+		I am a BSIT student. <br>To know more about me, feel free to explore
+		 my website.</p>
 </div>	
 
 	</section>
@@ -64,14 +71,16 @@
 <!--Skills-->
 <section class="skills">
 	<div class="max-width">	
-	<!---max-width dito-->
 	<h1>Skills</h1> <!--title-->
 	<p>My creative skills and experiences</p>
 
 	<div class="skills-content">
 		<div class="column left">
-			<div class="text">Taking up Bachelor of Science in Information Technology allows me to
-				explore and learn more about our technology and how helpful those things in our generation. These are the skills and the progress I made that I was able to acquire after 2 years in college.</div>
+			<div class="text">Taking up Bachelor of Science in Information Technology 
+				allows me to explore and learn more about our technology and how 
+				helpful those things in our generation. These are the skills and 
+				the progress I made that I was able to acquire after 2 years in 
+				college.</div>
 		</div>
 	</div>
 	<div class="column right">
@@ -96,7 +105,7 @@
 		<div  class="bars">
 			<div class="skills-col">
 				<span>PYTHON</span>
-				<span>30%</span>
+				<span>20%</span>
 			</div>
 		</div>
 		<div  class="bars">
@@ -121,7 +130,7 @@
 	</div>
 </section>
 
-<!--Educatiom-->
+<!--Education-->
 <section class="edu">
 	<h1>Educational Background</h1>
 	<p>The school I attended</p>
@@ -148,27 +157,40 @@
 	</div>
 </section>
 
+<!---Projects-->
 <section class="project">
 	<h1>Projects</h1>
-	<p>These are the projects I've made and participated with.</p>
+	<h4>These are the projects I've made and participated with.</h4>
 
 	<div class="row">
 		<div class="proj-col">
 			<img src="images/1.jpeg">
-			<h3>Personal Website</h3>
+			<div class="layer">
+				<h3>Personal Website</h3>
+				<p>This website is an actual project of mine in one of my 
+					major subject back in year 2019.It is a responsive 
+					website that contains my personal information.</p>
+			</div>
 		</div>
 	</div>
 	<div class="row">
 		<div class="proj-col">
 			<img src="images/2.jpeg">
-			<h3>Zink Website</h3>
+			<div class="layer">
+				<h3>Zink Website</h3>
+				<p>Another project that I participated  with is this Zink 
+					Website. This is a web-based syestem that utilized HTML, 
+					CSS, PHP, MySQL and JavaScript. Basically this a social 
+					media website that is considered as our final project 
+					this year.</p>
+			</div>
 		</div>
 	</div>
 </section>
 
 <!---JavaScript-->
 <script>
-	var navLinks = document.getElementId("navLinks");
+	var navLinks = document.getElementById("navLinks");
 	function showMenu(){
 		navLinks.style.right = "0";
 	}
