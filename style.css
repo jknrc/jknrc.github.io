@@ -101,6 +101,7 @@ nav .fa{
     }
 }
 
+/*about*/
 .about{
     width: 80%;
     margin: auto;
@@ -118,7 +119,6 @@ p{
     line-height: 22px;
     padding: 10px;
 }
-
 .row{
     margin-top: 5%;
     display: flex;
@@ -154,16 +154,6 @@ h3{
     text-align: center;
     padding-top: 50px;
 }
-.skills-col{
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-}
-.skills .skills-content column{
-    width: calc(50% -30px);
-}
 h1{
     font-size: 36px;
     font-weight: 500;
@@ -175,24 +165,134 @@ p{
     line-height: 22px;
     padding: 10px;
 }
-/*
-.skills-col img{
-    width: 100%;
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
-.layer{
-    background: rgba(226,0,0,0.7);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+.skills .skills-content .left .text{
+    color: #000;
+    margin-top: auto;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 30px;
+}
+.skills .right .bars{
+    margin-bottom: 8px;
+    margin-right: 50px;
+    padding-left: 50px;
+}
+.skills .right .skills-col{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.skills .right .span{
+font-weight: 500;
+font-size: 18px;
+}
+.skills-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+@media(max-width: 700px){
+    .h1{
+        font-size: 40px;
+    }
+    .skills .left .text{
+        font-size: 12px;
+    }
+    .skills .right .bars{
+        margin-bottom: 3px;
+    }
+    .skills .right .span{
+    font-weight: 200;
+    font-size: 12px;
+    }
+}
+/*education*/
+.edu{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 500;
+}
+p{
+    color: #777;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.edu-col{
+    flex-basis: 18%;
+    background: #E7c2f3;
+    border-radius: 10px;
+    margin-bottom: 15%;
+    padding: 30x 12px;
+    box-sizing: border-box;
     transition: 0.5s;
 }
-.layer:hover{
-    background: rgba(226,0,0,0.7);
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 50px 0;
+}
+.edu-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
 }
 
-if maglalagay ako ng pic 46:16-49:40 time para makapagedit ako for portfolio*/
-
-/*SKILLS*/
-
+/*projects*/
+.project{
+    width: 100%;
+    margin: 50px;
+    text-align: center;
+    padding-top: 100px;
+    object-position: center;
+}
+.proj-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+.proj-col img{
+    object-position: calc(50% - 30px);
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+}
+.proj-col p{
+    padding: 0;
+}
+.proj-col h3{
+    margin-top: 80px;
+    margin-bottom: 15px;
+    text-align: left;   
+}
+.project .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
