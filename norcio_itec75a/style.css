@@ -10,7 +10,7 @@ body{
 nav{
   height: 80px;
   width: 100%;
-  background: pink;
+  background: rgb(116, 113, 113);
 }
 label.logo{
   font-size: 35px;
@@ -49,6 +49,7 @@ nav #icon{
   cursor: pointer;
   display: none;
 }
+/* For  Responsiveness */
 @media (max-width: 1048px){
   label.logo{
     font-size: 32px;
