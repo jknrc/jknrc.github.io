@@ -1,6 +1,7 @@
 body{
   font-family: 'Pridi', serif;
 }
+/*NAV*/
 nav{
   height: 80px;
   width: 100%;
@@ -86,6 +87,7 @@ nav #icon{
   }
  }
 /* FOR THE CARDSS */
+
 .card body{
   box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.1);
 }

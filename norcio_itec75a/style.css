@@ -49,7 +49,7 @@ nav #icon{
   cursor: pointer;
   display: none;
 }
-/* For  Responsiveness */
+/* For  Responsiveness ng web*/
 @media (max-width: 1048px){
   label.logo{
     font-size: 32px;

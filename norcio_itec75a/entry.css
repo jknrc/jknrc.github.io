@@ -43,6 +43,7 @@ nav #icon{
   cursor: pointer;
   display: none;
 }
+/*for responsiveness*/
 @media (max-width: 1048px){
   label.logo{
     font-size: 32px;
